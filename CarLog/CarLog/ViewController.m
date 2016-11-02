@@ -89,10 +89,15 @@
     //直接返回str
     return str;
 }
-
+#pragma mark
+#pragma mark -  显示边栏字母
 -(NSArray<NSString *> *)sectionIndexTitlesForTableView:(UITableView *)tableView
 {
     return  self.index;
+}
+-(BOOL)prefersStatusBarHidden
+{
+    return YES;
 }
 @end
 
